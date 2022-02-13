@@ -1,0 +1,51 @@
+/*Reset CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:hover, a:active, a:visited{
+    color: inherit !important;
+}
+
+
+/*NavBar*/
+.navbar{
+    background-color: #755AF3;
+}
+.navContainer{
+    margin: 1rem;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: start;
+    color: #ffffff;
+}
+@media (min-width: 768px){
+    .navbar-collapse{
+        justify-content: end;
+    }
+  }
+  /*Logo*/
+  .navbar-brand img{
+      width: 80px;
+      height: 80px;
+  }
+
+
+  /*Secciones*/
+  .secciones{
+      width: 100vw;
+      height: 30rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+
+  /*Formulario*/
+  .formulario{
+      display: flex;
+      flex-flow: column nowrap;
+  }
