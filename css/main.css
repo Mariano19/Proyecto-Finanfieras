@@ -14,9 +14,7 @@ a, a:hover, a:active, a:visited{
 .navbar{
     background-color: #755AF3;
 }
-.navContainer{
-    margin: 1rem;
-}
+
 .navbar-collapse{
     display: flex;
     justify-content: start;
