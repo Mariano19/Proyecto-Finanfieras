@@ -29,18 +29,42 @@ a, a:hover, a:active, a:visited{
   }
   /*Logo*/
   .navbar-brand img{
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
   }
 
 
   /*Secciones*/
   .secciones{
       width: 100vw;
-      height: 30rem;
+      height: 32.5rem;
       display: flex;
       justify-content: space-around;
       align-items: center;
+  }
+  .patternRectangle{
+      background-position: center;
+      background-size: cover;
+      width: 41.375rem;
+      height: 27.5rem;
+      border-radius: 8px;
+  }
+  .seccionBanner{
+      background-image: url(/src/img/banner.jfif);
+      background-position: center;
+      background-size: cover;
+  }
+  .seccionVideo{
+    background-image: url(/src/img/patronVioleta.jpg);
+  }
+  .seccionTienda{
+    background-image: url(/src/img/patronVerde.jpg);
+  }
+  .seccionQuiz{
+    background-image: url(/src/img/patronCeleste.jpg);
+  }
+  .seccionPlantilla{
+      background-color: #7FDAF8;
   }
 
 
