@@ -35,7 +35,7 @@ a, a:hover, a:active, a:visited{
   /*Secciones*/
   .secciones{
       width: 100vw;
-      height: 32.5rem;
+      height: 40rem;
       display: flex;
       justify-content: space-around;
       align-items: center;
