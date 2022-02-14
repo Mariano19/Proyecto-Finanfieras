@@ -57,6 +57,13 @@ a, a:hover, a:active, a:visited{
   }
   .seccionTienda{
     background-image: url(/src/img/patronVerde.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .seccionTienda img{
+      width: 323px;
+      height: 323px;
   }
   .seccionQuiz{
     background-image: url(/src/img/patronCeleste.jpg);
