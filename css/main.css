@@ -1,13 +1,24 @@
 /*Reset CSS*/
 
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
 a, a:hover, a:active, a:visited{
     color: inherit !important;
 }
+/*FONTS*/
+/*fuente de la marca*/ /*para llamarla usar 'palmerlakeprint-regularRg'*/
+@font-face {
+    font-family: 'palmerlakeprint-regularRg';
+    src: url('/src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
+         url('/src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*fuente poppins de google fonts*//*para llamarla usar: 'Poppins', sans-serif*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /*NavBar*/
@@ -38,7 +49,20 @@ a, a:hover, a:active, a:visited{
       height: 40rem;
       display: flex;
       justify-content: space-around;
-      align-items: center;
+  }
+  .cuadrosDeTexto{
+    width: 41.375rem;
+    height: 27.5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    justify-content: space-evenly;
+}
+  .titulos{
+      font-family: 'palmerlakeprint-regularRg';
+      font-size: 40px;
+      margin-bottom: 1rem;
   }
   .patternRectangle{
       background-position: center;
@@ -47,31 +71,67 @@ a, a:hover, a:active, a:visited{
       height: 27.5rem;
       border-radius: 8px;
   }
+  .centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*SECCION BANNER*/
   .seccionBanner{
       background-image: url(/src/img/banner.jfif);
       background-position: center;
       background-size: cover;
   }
+  .seccionBanner img{
+    width: 207px;
+    height: 205px;
+  }
+  .logoBanner{
+      display: flex;
+      flex-flow: column nowrap;
+      position: absolute;
+      top: 2.25rem;
+      left: 8.875rem;
+      font-family: 'Poppins', sans-serif;
+  }
   .seccionVideo{
     background-image: url(/src/img/patronVioleta.jpg);
+
+  /*SECCION TIENDA*/
   }
   .seccionTienda{
     background-image: url(/src/img/patronVerde.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .seccionTienda img{
       width: 323px;
       height: 323px;
   }
+  /*SECCION QUIZ*/
   .seccionQuiz{
+      display: flex;
+      flex-flow: column nowrap;
+  }
+  .seccionQuiz h2{
+      font-size: 64px;
+      text-align: center;
+    }
+  .containerQuiz{
     background-image: url(/src/img/patronCeleste.jpg);
   }
+  .containerQuiz img{
+      height: 95%;
+  }
+
+  /*SECCION PLANTILLA*/
   .seccionPlantilla{
       background-color: #7FDAF8;
   }
+  .imgPlantilla{
+      width: 638px;
+      height: 440px;
+  }
 
+  
 
   /*Formulario*/
   .formulario{
