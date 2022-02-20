@@ -15,8 +15,8 @@ a, a:hover, a:active, a:visited{
 /*fuente de la marca*/ /*para llamarla usar 'palmerlakeprint-regularRg'*/
 @font-face {
     font-family: 'palmerlakeprint-regularRg';
-    src: url('/src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
-         url('/src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
+    src: url('../src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
+         url('../src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
@@ -82,7 +82,7 @@ a, a:hover, a:active, a:visited{
 
   /*SECCION BANNER*/
   .seccionBanner{
-      background-image: url(/src/img/banner.png);
+      background-image: url(./src/img/banner.png);
       background-position: center;
       background-size: cover;
       margin-bottom: 3rem;
@@ -103,12 +103,12 @@ a, a:hover, a:active, a:visited{
     font-size: 1.2em;
   }
   .seccionVideo{
-    background-image: url(/src/img/patronVioleta.jpg);
+    background-image: url(./src/img/patronVioleta.jpg);
 }
 
 /*SECCION TIENDA*/
   .seccionTienda{
-    background-image: url(/src/img/patronVerde.jpg);
+    background-image: url(./src/img/patronVerde.jpg);
   }
   .seccionTienda img{
       width: 323px;
@@ -125,7 +125,7 @@ a, a:hover, a:active, a:visited{
       text-align: center;
     }
   .containerQuiz{
-    background-image: url(/src/img/patronCeleste.jpg);
+    background-image: url(./src/img/patronCeleste.jpg);
   }
   .containerQuiz img{
       height: 95%;
