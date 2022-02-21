@@ -125,7 +125,7 @@ a, a:hover, a:active, a:visited{
       text-align: center;
     }
   .containerQuiz{
-    background-image: url(./src/img/patronCeleste.jpg);
+    background-image: url(../src/img/patronCeleste.jpg);
   }
   .containerQuiz img{
       height: 95%;
