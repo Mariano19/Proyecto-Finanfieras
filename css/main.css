@@ -52,17 +52,13 @@ a, a:hover, a:active, a:visited{
       width: 100vw;
       height: auto;
       display: flex;
-<<<<<<< HEAD
       flex-flow: column nowrap;
-      
-=======
-      justify-content: space-evenly;
->>>>>>> 90f2f4e749a585c2a6e5f419b427ed7e447d4f95
   }
   @media (min-width: 768px){
     .secciones{
         height: 40rem;
         justify-content: space-around;
+        flex-flow: row nowrap;
     }
 }
   .cuadrosDeTexto{
@@ -79,6 +75,7 @@ a, a:hover, a:active, a:visited{
       font-family: 'palmerlakeprint-regularRg';
       font-size: 40px;
       margin-bottom: 1rem;
+      color: #755BF4;
   }
   .patternRectangle{
       background-position: center;
