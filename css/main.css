@@ -48,11 +48,18 @@ a, a:hover, a:active, a:visited{
 
   /*Secciones*/
   .secciones{
-      width: 100%;
-      height: 40rem;
+      width: 100vw;
+      height: auto;
       display: flex;
-      justify-content: space-around;
+      flex-flow: column nowrap;
+      
   }
+  @media (min-width: 768px){
+    .secciones{
+        height: 40rem;
+        justify-content: space-around;
+    }
+}
   .cuadrosDeTexto{
     width: 41.375rem;
     height: 27.5rem;
@@ -62,6 +69,7 @@ a, a:hover, a:active, a:visited{
     text-align: left;
     justify-content: space-evenly;
 }
+
   .titulos{
       font-family: 'palmerlakeprint-regularRg';
       font-size: 40px;
@@ -82,30 +90,60 @@ a, a:hover, a:active, a:visited{
 
   /*SECCION BANNER*/
   .seccionBanner{
-      background-image: url(../src/img/banner.png);
-      background-position: center;
-      background-size: cover;
-      margin-bottom: 3rem;
+    background-image: url(../src/img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
   }
+  .seccionBanner:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
   .seccionBanner img{
-    width: 205px;
-    height: 205px;
+    width: 5rem;
+    height: 5rem;
   }
   .logoBanner{
       display: flex;
       flex-flow: column nowrap;
-      position: absolute;
-      top: 10rem;
-      left: 5rem;
   }
   .logoBanner p{
+      color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 0.8em;
+    position: relative;
+    top: 5rem;
+    left: 1rem;
   }
-  .seccionVideo{
+  
+@media (min-width: 768px){
+    .seccionBanner{
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3rem;
+    }
+    .seccionBanner img{
+        width: 13rem;
+        height: 13rem;
+      }
+    .logoBanner{
+        top: 2rem;
+        left: 2rem;
+    }
+    .logoBanner p{
+      font-size: 1.2em;
+    }
+  }
+
+/* SECCION VIDEO*/
+.seccionVideo{
     background-image: url(../src/img/patronVioleta.jpg);
 }
-
 /*SECCION TIENDA*/
   .seccionTienda{
     background-image: url(../src/img/patronVerde.jpg);
