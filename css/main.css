@@ -26,7 +26,8 @@ a, a:hover, a:active, a:visited{
 
 /*NavBar*/
 .navbar{
-    background-color: #755AF3;
+    /* background-color: #755AF3; */
+    background-color: #755af3e6;    
 }
 
 .navbar-collapse{
@@ -51,8 +52,12 @@ a, a:hover, a:active, a:visited{
       width: 100vw;
       height: auto;
       display: flex;
+<<<<<<< HEAD
       flex-flow: column nowrap;
       
+=======
+      justify-content: space-evenly;
+>>>>>>> 90f2f4e749a585c2a6e5f419b427ed7e447d4f95
   }
   @media (min-width: 768px){
     .secciones{
@@ -202,4 +207,35 @@ a, a:hover, a:active, a:visited{
   .formulario{
       display: flex;
       flex-flow: column nowrap;
+  }
+
+  /* Seccion footer */
+
+  .footer{
+    background-color: #755AF3;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+  }
+
+  .footer__condiciones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;    
+  }
+  .footer__condiciones span{
+    padding: 10px;  
+  }
+
+  .footer__redes{
+    font-family: 'palmerlakeprint-regularRg';
+    font-size: 4vw;
+  }
+
+  .footer__redes i{
+    padding: 10px;
   }
