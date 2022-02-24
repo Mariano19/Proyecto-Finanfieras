@@ -62,7 +62,8 @@ a, a:hover, a:active, a:visited{
     }
 }
   .cuadrosDeTexto{
-    width: 41.375rem;
+    width: 50%;
+    /* width: 41.375rem; */
     height: 27.5rem;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -142,11 +143,24 @@ a, a:hover, a:active, a:visited{
     }
   }
 
+/* SECCION QUIENES SOMOS */
+
+.seccion-quienesSomos{
+  display: flex;
+    width: 80%;
+}
+
 /* SECCION VIDEO*/
 .seccionVideo{
     background-image: url(../src/img/patronVioleta.jpg);
 }
 /*SECCION TIENDA*/
+
+  .seccion-tienda{
+    display: flex;
+    width: 80%;
+  }
+
   .seccionTienda{
     background-image: url(../src/img/patronVerde.jpg);
   }
@@ -172,22 +186,36 @@ a, a:hover, a:active, a:visited{
   }
 
   /*SECCION PLANTILLA*/
-  .seccionPlantilla{
-      background-color: #7FDAF8;
+  .seccion-plantilla{
+      /* background-color: #7FDAF8; */
+      display: flex;
+      width: 80%;
   }
   .imgPlantilla{
-      width: 45rem;
-      height: 25rem;
+    width: 100%;
+    /*   width: 45rem;
+      height: 25rem; */
   }
 
   /*SECCION NUESTROS CLIENTES*/
+  .seccion-clientes{
+    height: 100%;
+    overflow: hidden;
+    width: 60%;
+  }
+
   .containerLogos{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      column-gap: 50px;
-      row-gap: 30px;
-      width: 50vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 50px;
+    row-gap: 30px;
+    overflow: hidden;
+    height: 125px;
+    /* width: 100%; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   .containerLogos img{
     width: 94px;
@@ -235,4 +263,12 @@ a, a:hover, a:active, a:visited{
 
   .footer__redes i{
     padding: 10px;
+  }
+
+  /* Divisor */
+  .divisor{
+    background-image: url(../src/img/patronVerde.jpg);
+    height: 75px;
+    background-position: top;
+    width: 100%;    
   }
