@@ -26,7 +26,6 @@ a, a:hover, a:active, a:visited{
 
 /*NavBar*/
 .navbar{
-    /* background-color: #755AF3; */
     background-color: #755af3e6;    
 }
 
@@ -60,11 +59,11 @@ a, a:hover, a:active, a:visited{
         width: 100vw;
         height: 40rem;
         flex-flow: row nowrap;
+        justify-content: space-around;
     }
 }
   .cuadrosDeTexto{
-    width: 50%;
-    /* width: 41.375rem; */
+    width: 30%;
     height: 27.5rem;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -75,14 +74,14 @@ a, a:hover, a:active, a:visited{
 
   .titulos{
       font-family: 'palmerlakeprint-regularRg';
-      font-size: 40px;
+      font-size: 72px;
       margin-bottom: 1rem;
       color: #755BF4;
   }
   .patternRectangle{
       background-position: center;
       background-size: cover;
-      width: 41.375rem;
+      width: 42rem;
       height: 27.5rem;
       border-radius: 8px;
   }
@@ -136,7 +135,8 @@ a, a:hover, a:active, a:visited{
 
 .seccion-quienesSomos{
   display: flex;
-    width: 80%;
+    width: 95%;
+    justify-content: space-between;
 }
 
 /* SECCION VIDEO*/
@@ -147,7 +147,8 @@ a, a:hover, a:active, a:visited{
 
   .seccion-tienda{
     display: flex;
-    width: 80%;
+    width: 95%;
+    justify-content: space-between;
   }
 
   .seccionTienda{
@@ -160,8 +161,8 @@ a, a:hover, a:active, a:visited{
 
   /*SECCION QUIZ*/
   .seccionQuiz{
-      width: 100%;
-      height: 20rem;
+     width: 100%;
+     height: 20rem;
      background-color: #755AF3;
      text-align: center;
      flex-direction: column;
@@ -173,32 +174,27 @@ a, a:hover, a:active, a:visited{
 
   /*SECCION PLANTILLA*/
   .seccion-plantilla{
-      /* background-color: #7FDAF8; */
       display: flex;
-      width: 80%;
+      width: 95%;
+      justify-content: space-between;
   }
   .imgPlantilla{
-    width: 100%;
-    /*   width: 45rem;
-      height: 25rem; */
+    width: 95%;
   }
 
   /*SECCION NUESTROS CLIENTES*/
-  .seccion-clientes{
-    height: 100%;
-    overflow: hidden;
-    width: 60%;
+  .textoSeccionClientes{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
   }
 
   .containerLogos{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     column-gap: 50px;
     row-gap: 30px;
-    overflow: hidden;
     height: 125px;
-    /* width: 100%; */
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
