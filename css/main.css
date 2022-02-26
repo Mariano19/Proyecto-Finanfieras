@@ -26,7 +26,9 @@ a, a:hover, a:active, a:visited{
 
 /*NavBar*/
 .navbar{
-    background-color: #755af3e6;    
+    background-color: #755af3e6; 
+    padding-top: 0;
+    padding-bottom: 0;   
 }
 
 .navbar-collapse{
@@ -95,12 +97,16 @@ a, a:hover, a:active, a:visited{
   .seccionBanner{
     background-image: url(../src/img/banner.png);
     background-size: cover;
+    background-position: center;
 
 }
   .logoBanner{
+    position: relative;
+    left: -25%;
     display: flex;
     flex-flow: column nowrap;
     position: relative;
+    justify-content: center;
 }
   .logoBanner img{
     width: 5rem;
@@ -115,10 +121,10 @@ a, a:hover, a:active, a:visited{
     .seccionBanner{
     margin-bottom: 3rem;
     }
-    .logoBanner{
+    /* .logoBanner{
         top: 10rem;
         left: 1rem;
-    }
+    } */
     .logoBanner img{
         width: 13rem;
         height: 13rem;
@@ -216,8 +222,30 @@ a, a:hover, a:active, a:visited{
 
   /*Formulario*/
   .formulario{
-      display: flex;
-      flex-flow: column nowrap;
+    flex-wrap: wrap;
+    display: flex;
+    /* flex-flow: column nowrap; */
+    justify-content: space-between;
+    height: 30vh;
+    flex-direction: row;
+    align-content: space-around;
+  }
+
+  .formulario button{
+    width: 100%;
+    height: 5vh;
+  }
+
+  .formulario input{
+    height: 50px;
+  }
+
+  #nombre, #email{
+    width: 40%;
+  }
+  #mensaje{
+    height: 14vh;
+    width: 100%;
   }
 
   /* Seccion footer */
@@ -258,3 +286,7 @@ a, a:hover, a:active, a:visited{
     background-position: top;
     width: 100%;    
   }
+
+  
+
+

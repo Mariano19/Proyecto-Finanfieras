@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/9b01b79774.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/botones.css">
     <title>Finanfieras</title>
     <meta name="keywords" content="" />
     <meta name="description" content="">
@@ -86,9 +87,9 @@
     <!-- Quiz  -->
     <section class="secciones" id="quiz">
       <div class="seccionQuiz centrado">
-        <h2 class="titulos">HACÉ NUESTRO QUIZ, “¿qUÉ TAN FINANFIERX SOS
+        <h2 class="titulos">HACÉ NUESTRO QUIZ, “¿qUÉ TAN FINANFIERX SOS?"
         </h2>
-        <button>REALIZAR TEST</button>
+        <button class="boton-accion" role="button">REALIZAR TEST</button>
       </div>     
     </section>
 
@@ -98,7 +99,7 @@
         <div class="cuadrosDeTexto">
           <h2 class="titulos">PLANTILLA DE PRESUPUESTO</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi reiciendis officiis sit perspiciatis. Dolorum quibusdam alias quisquam ea aperiam distinctio eos, maiores consequuntur molestiae eum reprehenderit quasi porro iure.</p>
-            <a href="#" download="plantilla_Finanfieras"><button>descargar</button></a>
+            <a href="#" download="plantilla_Finanfieras"><button class="boton-accion" role="button">DESCARGAR PLANTILLA</button></a>
         </div> 
         <div class="centrado">
           <img class="imgPlantilla" src="./src/img/plantillaPresupuestos.png" alt="plantilla de presupuesto finanfieras">
@@ -150,22 +151,25 @@
 
     <!-- Formulario de contacto-->
     <section class="secciones"> 
-      <div>
-        <h3>Formulario de Contacto</h3>
-      </div>
-
-      <!--Form-->
-      <div>
-        <form class="formulario" id="form" action="https://formspree.io/f/xlezbeoo" method="POST">
-          <label for="nombre">Nombre: </label>
-          <input type="text" name="nombre" id="nombre" required placeholder="Ingresá tu nombre">
-          <label for="email">Email: </label>
-          <input type="email" name="email" id="email" required placeholder="Ingresá tu correo elecrónico">
-          <label for="mensaje">Tu mensaje: </label>
-          <textarea name="mensaje" id="mensaje" required placeholder="Escribí tu mensaje"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>       
+      <div class="seccion-formulario">
+        <div>
+          <h2 class="titulos">Conectate con nosotros</h2>
+          <p>Si quieres comunicarte con nosotros, puedes enviarnos un email completando el siguiente formulario</p>
+        </div>
+  
+        <!--Form-->
+        <div>
+          <form class="formulario" id="form" action="https://formspree.io/f/xlezbeoo" method="POST">
+            <!-- <label for="nombre">Nombre: </label> -->
+            <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre">
+            <!-- <label for="email">Email: </label> -->
+            <input type="email" name="email" id="email" required placeholder="Tu email">
+            <!-- <label for="mensaje">Tu mensaje: </label> -->
+            <textarea name="mensaje" id="mensaje" required placeholder="Mensaje"></textarea>
+            <button class="boton-accion" role="button" type="submit">ENVIAR</button>
+          </form>
+        </div> 
+      </div>            
     </section>
 
     <!-- Footer -->
