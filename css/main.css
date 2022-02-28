@@ -157,8 +157,9 @@ a, a:hover, a:active, a:visited{
 .seccion-quienesSomos{
   display: flex;
   flex-flow: column nowrap;  
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  row-gap: 3rem;
 }
 .seccionVideo{
   background-image: url(../src/img/patronVioleta.jpg);
@@ -227,7 +228,7 @@ a, a:hover, a:active, a:visited{
 
 /*SECCION PLANTILLA*/
 .seccion-plantilla{
-  height: 40rem;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -308,11 +309,11 @@ a, a:hover, a:active, a:visited{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  text-align: justify;
 }
 .formulario{
-  height: 20rem;
+  height: 30rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -320,13 +321,13 @@ a, a:hover, a:active, a:visited{
   .formulario button{
     width: 10rem;
     height: 3rem;
-    align-self: flex-end;
-   
+    align-self: center;
   }
 .inputsContainers{
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
+  height: 6rem;
 }
   .formulario input{
     width: 13rem;
@@ -335,9 +336,24 @@ a, a:hover, a:active, a:visited{
   }
   #mensaje{
     height: 10rem;
-    width: 28rem;
+    width: 100%;
     border-radius: 8px;
   }
+    @media (min-width: 768px){
+      .formulario{
+        height: 20rem;
+      }
+      .inputsContainers{
+        flex-flow: row nowrap;
+      }
+      .formulario button{
+        align-self: flex-end;
+      }
+      #mensaje{
+        height: 10rem;
+        width: 28rem;
+      }
+    }
 
 /* Seccion footer */
 
@@ -356,6 +372,7 @@ a, a:hover, a:active, a:visited{
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Poppins', sans-serif;    
+  font-size: 0.8em;
 }
   .footer__condiciones span{
     padding: 10px;  
@@ -363,12 +380,22 @@ a, a:hover, a:active, a:visited{
 
 .footer__redes{
   font-family: 'palmerlakeprint-regularRg';
-  font-size: 4vw;
+  font-size: 1.5rem;
 }
 
   .footer__redes i{
     padding: 10px;
   }
+  @media (min-width: 768px){
+    .footer__redes{
+      font-family: 'palmerlakeprint-regularRg';
+      font-size: 4vw;
+    }
+    .footer__condiciones{
+      font-size: 1em;
+    }
+  }
+
 
   
 
