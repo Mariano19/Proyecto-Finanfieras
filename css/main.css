@@ -61,37 +61,37 @@ a, a:hover, a:active, a:visited{
         height: 40rem;
     }
 }
-  .cuadrosDeTexto{
-    width: 80%;
-    height: 14rem;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: left;
+.cuadrosDeTexto{
+  width: 80%;
+  height: 14rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
 }
-@media (min-width: 768px){
-  .cuadrosDeTexto{
-    width: 30%;
-    height: 28rem;
-    flex-flow: column nowrap;
-    text-align: left;
-    justify-content: space-evenly;
+  @media (min-width: 768px){
+    .cuadrosDeTexto{
+      width: 30%;
+      height: 28rem;
+      flex-flow: column nowrap;
+      text-align: left;
+      justify-content: space-evenly;
+    }
   }
-}
 
-  .titulos{
-      font-family: 'palmerlakeprint-regularRg';
-      font-size: 72px;
-      margin-bottom: 1rem;
-      color: #755BF4;
-  }
-  .patternRectangle{
-      background-position: center;
-      background-size: cover;
-      border-radius: 8px;
-      width: 18rem;
-      height: 12rem;
-  }
+.titulos{
+  font-family: 'palmerlakeprint-regularRg';
+  font-size: 72px;
+  margin-bottom: 1rem;
+  color: #755BF4;
+}
+.patternRectangle{
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 18rem;
+  height: 12rem;
+}
   @media (min-width: 768px){
     .patternRectangle{
       width: 50%;
@@ -99,27 +99,27 @@ a, a:hover, a:active, a:visited{
     }
   }
   
-  .centrado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*SECCION BANNER*/
-  .seccionBanner{
-    background-image: url(../src/img/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 3rem;
+.centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  .logoBanner{
-    position: relative;
-    left: 1rem;
-    top: 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    position: relative;
-    justify-content: center;
+
+/*SECCION BANNER*/
+.seccionBanner{
+  background-image: url(../src/img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+.logoBanner{
+  position: relative;
+  left: 1rem;
+  top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  justify-content: center;
 }
   .logoBanner img{
     width: 5rem;
@@ -128,60 +128,56 @@ a, a:hover, a:active, a:visited{
   .logoBanner p{
     opacity: 0;
   }
-  @media (min-width: 768px){
-    .seccionBanner{
-      height: 40rem;
-    }
-    .logoBanner{
-      left: 2rem;
-      top: 8rem;
-    }
-    .logoBanner img{
-        width: 13rem;
-        height: 13rem;
+    @media (min-width: 768px){
+      .seccionBanner{
+        height: 40rem;
       }
-      .logoBanner p{
-        opacity: 1;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
-        font-size: 1.2em;
+      .logoBanner{
+        left: 2rem;
+        top: 8rem;
+      }
+      .logoBanner img{
+          width: 13rem;
+          height: 13rem;
+        }
+        .logoBanner p{
+          opacity: 1;
+          font-family: 'Poppins', sans-serif;
+          position: relative;
+          font-size: 1.2em;
+      }
     }
-  }
   
 
 /* SECCION QUIENES SOMOS */
 
 .seccion-quienesSomos{
-    display: flex;
-    flex-flow: column nowrap;  
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-content: center;
+  align-items: center;
 }
 .seccionVideo{
   background-image: url(../src/img/patronVioleta.jpg);
 }
-.seccionVideo img{
-  width: 8.5rem;
-  height: 5.5rem;
-}
-@media (min-width: 768px){
-  .seccion-quienesSomos{
-    justify-content: space-evenly;
-    flex-flow: row nowrap;
-  }
   .seccionVideo img{
-    width: 17rem;
-    height: 13rem;
+    width: 8.5rem;
+    height: 5.5rem;
   }
-}
+    @media (min-width: 768px){
+      .seccion-quienesSomos{
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+      }
+      .seccionVideo img{
+        width: 17rem;
+        height: 13rem;
+      }
+    }
 
 /*SECCION TIENDA*/
 .seccionTienda{
   background-image: url(../src/img/patronVerde.jpg);
-}
-.seccionTienda img{
-  width: 8.5rem;
-  height: 8.5rem;
 }
 .seccion-tienda{
   display: flex;
@@ -189,49 +185,53 @@ a, a:hover, a:active, a:visited{
   justify-content: center;
   align-items: center;
 }
-  @media (min-width: 768px){
-    .seccion-tienda{
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-    }
-    .seccionTienda img{
-      width: 16rem;
-      height: 16rem;
-    }
+  .seccionTienda img{
+    width: 8.5rem;
+    height: 8.5rem;
   }
+    @media (min-width: 768px){
+      .seccion-tienda{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+      }
+      .seccionTienda img{
+        width: 16rem;
+        height: 16rem;
+      }
+    }
 
 
-  /*SECCION QUIZ*/
-  .seccionQuiz{
-    width: 99vmax;
-    height: 20rem;     
-    text-align: center;
-    flex-direction: column;
-    background-image: url(../src/img/quizImage.png);
-    background-repeat: no-repeat;    
-    background-size: cover;
-    background-position: center;
-  }
+/*SECCION QUIZ*/
+.seccionQuiz{
+  width: 99vmax;
+  height: 20rem;     
+  text-align: center;
+  flex-direction: column;
+  background-image: url(../src/img/quizImage.png);
+  background-repeat: no-repeat;    
+  background-size: cover;
+  background-position: center;
+}
   .seccionQuiz h2{
       font-size: 64px;
       color: #ffffff;
     }
 
-  /*SECCION PLANTILLA*/
-  .seccion-plantilla{
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .imgPlantilla{
-    width: 60%;
-  }
-  
-@media (min-width: 768px){
-  .seccion-plantilla{
-    justify-content: space-evenly;
-    flex-flow: row nowrap;
-  }
+/*SECCION PLANTILLA*/
+.seccion-plantilla{
+  display: flex;
+  flex-flow: column nowrap;
 }
+.imgPlantilla{
+  width: 60%;
+}
+  
+  @media (min-width: 768px){
+    .seccion-plantilla{
+      justify-content: space-evenly;
+      flex-flow: row nowrap;
+    }
+  }
 /* Divisor */
 .divisor{
   background-image: url(../src/img/patronVerde.jpg);
@@ -240,24 +240,24 @@ a, a:hover, a:active, a:visited{
   width:99%;    
 }
 
-  /*SECCION NUESTROS CLIENTES*/
-  .seccion-clientes{
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .textoSeccionClientes{
-    font-family: 'Poppins', sans-serif;
-  }
+/*SECCION NUESTROS CLIENTES*/
+.seccion-clientes{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.textoSeccionClientes{
+  font-family: 'Poppins', sans-serif;
+}
 
-  .containerLogos{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    column-gap: 50px;
-    row-gap: 30px;
-    height: 125px;
-    width: 100%;
-  }
+.containerLogos{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 30px;
+  height: 125px;
+  width: 100%;
+}
   .containerLogos img{
     width: 94px;
     height: 94px;
@@ -269,32 +269,31 @@ a, a:hover, a:active, a:visited{
   }
   
 
-  /*Formulario*/
-  .seccion-formulario{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  .formulario{
-    height: 20rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-  }
-
+/*Formulario*/
+.seccion-formulario{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.formulario{
+  height: 20rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
   .formulario button{
     width: 10rem;
     height: 3rem;
     align-self: flex-end;
    
   }
-  .inputsContainers{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
+.inputsContainers{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
   .formulario input{
     width: 13rem;
     height: 40px;
@@ -306,33 +305,32 @@ a, a:hover, a:active, a:visited{
     border-radius: 8px;
   }
 
-  /* Seccion footer */
+/* Seccion footer */
 
-  .footer{
-    background-color: #755AF3;
-    width: 99%;
-    height: 20rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-  }
-
-  .footer__condiciones{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: 'Poppins', sans-serif;    
-  }
+.footer{
+  background-color: #755AF3;
+  width: 99%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.footer__condiciones{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Poppins', sans-serif;    
+}
   .footer__condiciones span{
     padding: 10px;  
   }
 
-  .footer__redes{
-    font-family: 'palmerlakeprint-regularRg';
-    font-size: 4vw;
-  }
+.footer__redes{
+  font-family: 'palmerlakeprint-regularRg';
+  font-size: 4vw;
+}
 
   .footer__redes i{
     padding: 10px;
