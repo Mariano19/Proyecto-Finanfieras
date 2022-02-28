@@ -1,59 +1,60 @@
 /*Reset CSS*/
 
 body{
-    width: 100vw;
-    margin: 0; 
-    padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0; 
+  padding: 0;
 }
 a, a:hover, a:active, a:visited{
-    color: inherit !important;
+  color: inherit !important;
 }
 /*FONTS*/
 /*fuente de la marca*/ /*para llamarla usar 'palmerlakeprint-regularRg'*/
 @font-face {
-    font-family: 'palmerlakeprint-regularRg';
-    src: url('../src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
-         url('../src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'palmerlakeprint-regularRg';
+  src: url('../src/fonts/palmerlakeprint-regular-webfont.woff2') format('woff2'),
+      url('../src/fonts/palmerlakeprint-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*fuente poppins de google fonts*//*para llamarla usar: 'Poppins', sans-serif*/
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /*NavBar*/
 .navbar{
-    background-color: #755af3e6; 
-    padding-top: 0;
-    padding-bottom: 0;   
-    width: 98vw;
+  background-color: #755af3e6; 
+  padding-top: 0;
+  padding-bottom: 0;   
+  width: 98vw;
 }
 
 .navbar-collapse{
-    display: flex;
-    justify-content: start;
-    color: #ffffff;
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
 }
-@media (min-width: 768px){
+  @media (min-width: 768px){
     .navbar-collapse{
-        justify-content: end;
+      justify-content: end;
     }
   }
   /*Logo*/
-  .navbar-brand img{
-      width: 64px;
-      height: 64px;
-  }
+.navbar-brand img{
+  width: 64px;
+  height: 64px;
+}
 
 
-  /*Secciones*/
-  .secciones{
-      width: 100%;
-      height: 20rem;
-      margin-bottom: 3rem;
-      align-items: center;
-      margin-bottom: 3rem;
-  }
+/*Secciones*/
+.secciones{
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
   @media (min-width: 768px){
     .secciones{
         width: 100%;
