@@ -34,6 +34,9 @@ a, a:hover, a:active, a:visited{
   display: flex;
   color: #ffffff;
 }
+.navbar-toggler{
+  margin-right: 1rem;
+}
   @media (min-width: 768px){
     .navbar-collapse{
       justify-content: end;
