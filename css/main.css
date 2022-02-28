@@ -1,7 +1,7 @@
 /*Reset CSS*/
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   margin: 0; 
   padding: 0;
@@ -27,7 +27,7 @@ a, a:hover, a:active, a:visited{
   background-color: #755af3e6; 
   padding-top: 0;
   padding-bottom: 0;   
-  width: 98vw;
+  width: 100%;
 }
 
 .navbar-collapse{
@@ -203,7 +203,7 @@ a, a:hover, a:active, a:visited{
 
 /*SECCION QUIZ*/
 .seccionQuiz{
-  width: 99vmax;
+  width: 100%;
   height: 20rem;     
   text-align: center;
   flex-direction: column;
@@ -237,7 +237,7 @@ a, a:hover, a:active, a:visited{
   background-image: url(../src/img/patronVerde.jpg);
   height: 4.5rem;
   background-position: top;
-  width:99%;    
+  width:100%;    
 }
 
 /*SECCION NUESTROS CLIENTES*/
@@ -309,7 +309,7 @@ a, a:hover, a:active, a:visited{
 
 .footer{
   background-color: #755AF3;
-  width: 99%;
+  width: 100%;
   height: 20rem;
   display: flex;
   flex-direction: row;
