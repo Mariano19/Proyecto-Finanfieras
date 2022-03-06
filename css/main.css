@@ -315,8 +315,15 @@ a, a:hover, a:active, a:visited{
   flex-flow: column nowrap;
   align-items: center;
   width: 90%;
+  margin-top: 3%;
+  margin-bottom: 5%;
   text-align: justify;
 }
+
+form .inputsContainers {
+  height: 3rem;
+}
+
 .formulario{
   height: 30rem;
   display: flex;
