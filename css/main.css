@@ -184,6 +184,10 @@ a, a:hover, a:active, a:visited{
     }
 
 /*SECCION TIENDA*/
+
+#nuestraTienda{
+  height: 40rem;
+}
 .seccionTienda{
   background-image: url(../src/img/patronVerde.jpg);
 }
@@ -208,6 +212,14 @@ a, a:hover, a:active, a:visited{
       }
     }
 
+/* CARROUSEL */
+.carouselContendor{
+  width: 29%;
+}
+
+#carouselSlidesOnly{
+  width: 100%;
+}
 
 /*SECCION QUIZ*/
 .seccionQuiz{
