@@ -81,13 +81,13 @@
             <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="./src/img/tienda/ALCANCIA1.png" class="d-block w-100" alt="...">
+                  <img src="./src/img/tienda/ALCANCIA1.png" class=" imgCarrousel d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/tienda/ALCANCIA2.png" class="d-block w-100" alt="...">
+                  <img src="./src/img/tienda/ALCANCIA2.png" class="imgCarrousel d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/tienda/ALCANCIA3.png" class="d-block w-100" alt="...">
+                  <img src="./src/img/tienda/ALCANCIA3.png" class="imgCarrousel d-block w-100" alt="...">
                 </div>
               </div>
             </div>
@@ -115,6 +115,7 @@
               <a href="./src/PRESUPUESTOS FINANFIERAS FINAL.xlsx" download="plantilla_Finanfieras"><button class="boton-accion" role="button">DESCARGAR PLANTILLA</button></a>
           </div> 
           <img class="imgPlantilla" src="./src/img/plantillaPresupuestos.png" alt="plantilla de presupuesto finanfieras">
+          <img class="imgPlantillaMobile" src="./src/img/IMAGEN_PRESUPUESTO.JPG" alt="plantilla de presupuesto finanfieras">
         </div>                   
       </section>
 
@@ -179,14 +180,57 @@
       </section>
     </main>
 
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Politica de privacidad</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Para Finanfieras Perú SRL es sumamente importante la seguridad de la privacidad de todos los usuarios que visitan nuestro sitio web, por lo que se establece la siguiente política de protección de la información personal.</p>
+            <p>Finanfieras Perú SRL aprecia y agradece la confianza de los visitantes a nuestro sitio web y tratará toda la información personal de manera cuidadosa y responsable; practicando los más altos criterios en materia de protección de datos y privacidad. 
+            Al acceder al sitio web, se entiende que el usuario acepta las prácticas descritas en la presente Política de Privacidad y da su consentimiento expreso al tratamiento de los datos personales por él facilitados o proporcionados a través de su acceso al sitio web por cualquier medio.</p>
+            <p>Los datos personales recogidos formarán parte de una base de datos que permanecerá vigente durante el periodo que el usuario considere necesario para cumplir con la finalidad concreta para la que fueron recabados, una vez concluida, sus datos serán cancelados.</p> 
+            <h5>
+              ¿Para qué fines utilizaremos tus datos personales?
+            </h5>
+            <p>Los datos personales que tendrá Finanfieras Perú SRL serán gestionados y tratados para las finalidades nombradas a continuación.El usuario declara aceptar y prestar su consentimiento libre, previo, expreso, inequívoco e informado para el tratamiento de sus datos personales a favor de Financieras Perú SRL para las siguientes finalidades: </p>
+            <ul>
+              <li>Identificación de los usuarios al momento de brindar información o contenidos.</li>
+              <li>Fines estadísticos.</li>
+              <li>Mejorar la calidad de los servicios de Finanfieras Perú SRL, y secciones.</li>
+              <li>Enviar boletines y notificaciones relacionadas con nuestros proyectos y servicios</li>
+              <li>Enviar notificaciones relacionadas con las modificaciones realizadas al presente aviso de privacidad</li>
+            </ul>
+            <p> En caso de que no desees autorizar el uso de tus datos personales para las finalidades señaladas en este párrafo, Finanfieras Perú SRL    agradece que nos lo hagas saber enviando un correo electrónico a: finanfieras@gmail.com
+            Puedes revocar tu consentimiento para el uso de tus datos personales
+            Puedes revocar tu consentimiento en cualquier momento enviándonos una notificación a la siguiente dirección de correo electrónico: finanfieras@gmail.com </p>
+            <p>Los Usuarios garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia, licitud y autenticidad de todos los datos e información personal ingresada. </p>
+            <h5>Consultas sobre privacidad y tratamiento de datos</h5>
+            <p>Si tiene dudas o preguntas sobre las políticas de privacidad o tratamiento de datos de Finanfieras Perú SRL por favor utilice la dirección de correo electrónico para contactarnos: finanfieras@gmail.com</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
 <!-- Footer -->
     <footer>
       <div class="footer">
         <div class="footer__condiciones">
-          <span>Condiciones de uso</span>
-          <span>Politica de privacidad</span>
-          <span>Terminos y condiciones</span>
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">  
+              Politica de privacidad
+            </button>
         </div>
+          
         <div class="footer__redes">
           <span>Nuestras redes</span>
           <div class="iconos">
