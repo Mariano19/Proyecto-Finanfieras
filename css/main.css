@@ -188,6 +188,11 @@ a, a:hover, a:active, a:visited{
   height: 40rem;
   margin-bottom: 3rem;
 }
+
+.seccion-tienda button{
+    width: 52%;
+}
+
 .seccion-tienda{
   display: flex;
   flex-flow: column nowrap;  
@@ -284,11 +289,13 @@ a, a:hover, a:active, a:visited{
   display: flex;
   flex-flow: column nowrap;
   height: 30rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 5rem;
+  align-items: center;
 }
 .textoSeccionClientes{
   font-family: 'Poppins', sans-serif;
+  width: 51%;
 }
 
 .containerLogos{
