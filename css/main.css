@@ -424,6 +424,9 @@ form .inputsContainers {
   .footer__condiciones span{
     padding: 10px;  
   }
+  .footer__condiciones a{
+      cursor: pointer;
+  }
 
 .footer__redes{
   font-family: 'palmerlakeprint-regularRg';
