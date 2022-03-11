@@ -74,7 +74,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
+}
+.botonVerde{
+  background-color: #49D3B9;
+  font-weight: 600;
 }
 
 .boton-accion-secundario{    

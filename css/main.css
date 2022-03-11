@@ -80,13 +80,13 @@ a, a:hover, a:active, a:visited{
 
 .titulos{
   font-family: 'palmerlakeprint-regularRg';
-  font-size: 40px;
+  font-size: 2em;
   margin-bottom: 1rem;
   color: #755BF4;
 }
 @media (min-width: 768px){
   .titulos{
-    font-size: 72px;
+    font-size: 3em;
   }
 }
 .patternRectangle{
@@ -223,21 +223,35 @@ a, a:hover, a:active, a:visited{
 /*SECCION QUIZ*/
 .seccionQuiz{
   width: 100%;
-  height: 26rem;   
+  height: 15rem;   
   text-align: center;
   flex-direction: column;
-  background-image: url(../src/img/quizImage.png);
-  background-repeat: no-repeat;    
-  background-size: cover;
-  background-position: center;
+  justify-content: space-around;
+  background-color: #755BF4;
 }
   .seccionQuiz h2{
-      font-size: 64px;
       color: #ffffff;
     }
+    .leonQuiz{
+      width:60px;
+      height:60px;
+    }
+    .containerQuizContent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     @media (min-width: 768px){
+      .leonQuiz{
+        width:100px;
+        height:100px;
+      }
+      .containerQuizContent{
+        column-gap: 5rem;
+        padding: 0 1rem;
+      }
       .seccionQuiz{
-        height: 30rem;
+        height: 15rem;
       }
     }
 
