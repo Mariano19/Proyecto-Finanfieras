@@ -1,7 +1,6 @@
 /* Boton Principal */
 /* CSS */
 .boton-accion {
-  text-transform: uppercase;
   backface-visibility: hidden;
   background: #755AF3;
   border: 0;
