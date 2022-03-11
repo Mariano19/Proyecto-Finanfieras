@@ -85,7 +85,7 @@ a, a:hover, a:active, a:visited{
 }
 @media (min-width: 768px){
   .titulos{
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 .patternRectangle{
@@ -179,10 +179,10 @@ a, a:hover, a:active, a:visited{
         margin-top: 0;
         height: 40rem;
       }
-      .logoBanner{
-        /* left: 2rem;
-        top: 8rem; */
-      }
+      /* .logoBanner{
+         left: 2rem;
+        top: 8rem; 
+      } */
       .logoBanner img{
           width: 13rem;
           height: 13rem;
@@ -274,6 +274,9 @@ a, a:hover, a:active, a:visited{
 }
 
 /*SECCION QUIZ*/
+#quiz{
+  height: 15rem;
+}
 .seccionQuiz{
   width: 100%;
   height: 15rem;   
@@ -296,15 +299,15 @@ a, a:hover, a:active, a:visited{
     }
     @media (min-width: 768px){
       .leonQuiz{
-        width:100px;
-        height:100px;
+        width:12.3rem;
+        height:12.4rem;
       }
       .containerQuizContent{
-        column-gap: 5rem;
-        padding: 0 1rem;
+        column-gap: 3rem;
+        padding: 0 0.5rem;
       }
       .seccionQuiz{
-        height: 15rem;
+        height: 18rem;
       }
     }
 

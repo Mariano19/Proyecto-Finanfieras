@@ -80,6 +80,7 @@
 .botonVerde{
   background-color: #49D3B9;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .boton-accion-secundario{    
