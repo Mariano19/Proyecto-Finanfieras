@@ -26,6 +26,7 @@ a, a:hover, a:active, a:visited{
   padding-top: 0;
   padding-bottom: 0;   
   width: 100%;
+  font-weight: 500;
 }
 
 .navbar-collapse{
@@ -84,7 +85,7 @@ a, a:hover, a:active, a:visited{
 }
 @media (min-width: 768px){
   .titulos{
-    font-size: 3em;
+    font-size: 4rem;
   }
 }
 .patternRectangle{
@@ -96,7 +97,7 @@ a, a:hover, a:active, a:visited{
 }
   @media (min-width: 768px){
     .patternRectangle{
-      width: 50%;
+      width: 40%;
       height: 28rem;
     }
   }
@@ -109,20 +110,62 @@ a, a:hover, a:active, a:visited{
 
 /*SECCION BANNER*/
 .seccionBanner{
-  background-image: url(../src/img/banner.png);
-  background-size: cover;
+  background-image: url(../src/img/fotoPortada.png);
+  color: white;
+  background-color:#755BF4;
+  background-size: 50%;
+  background-position-x: 76%;
   background-repeat: no-repeat;
   margin:4rem 0 3rem 0;
   height: 15rem;
+  font-family: 'Poppins', sans-serif;
+  background-position-y: bottom;
 }
-.logoBanner{
+
+.titulo-banner{
+  margin-top: 7rem;
+  font-size: 3rem;
+  font-weight: 500;
+  display: inline-flex;
+  width: 46%;
+}
+
+.banner-margen{
+  margin-left: 8%;
+}
+
+.titulo span{
+  display: block;
+  margin-top: 2%;
+  font-weight: 300;
+}
+
+.redes-banner{
   position: relative;
+  bottom: -9vh;
+}
+
+.redes-banner a{
+  font-size: 1.5rem;
+    padding: 10px;
+}
+
+.redes-banner p{
+  font-size: 1.2rem;
+}
+
+.logoBanner{
+  /* position: relative;
   left: 1rem;
-  top: 2rem;
+  top: 2rem; 
   display: flex;
   flex-flow: column nowrap;
   position: relative;
-  justify-content: center;
+  justify-content: center; */
+  position: relative;
+  float: right;
+  right: 5%;  
+  top: 4rem;
 }
   .logoBanner img{
     width: 5rem;
@@ -137,8 +180,8 @@ a, a:hover, a:active, a:visited{
         height: 40rem;
       }
       .logoBanner{
-        left: 2rem;
-        top: 8rem;
+        /* left: 2rem;
+        top: 8rem; */
       }
       .logoBanner img{
           width: 13rem;
@@ -151,6 +194,13 @@ a, a:hover, a:active, a:visited{
           font-size: 1.2em;
       }
     }
+  
+    @media (min-width: 1400px){
+      .titulo-banner{
+        width: 33%;
+      }
+    }
+  
   
 
 /* SECCION QUIENES SOMOS */
@@ -212,7 +262,7 @@ a, a:hover, a:active, a:visited{
 }
 @media (min-width: 768px){
   .carouselContendor{
-    width: 45%;
+    width: 40%;
   }
   .imgCarrousel{
     height: 35rem;
