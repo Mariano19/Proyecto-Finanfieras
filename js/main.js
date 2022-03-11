@@ -18,3 +18,11 @@ async function handleSubmit(event) {
     }
 }
 
+
+
+//////////////////////////////////////////////////////////
+/*Footer*/
+
+var copyrightYear = new Date().getFullYear()
+
+document.getElementById('copyright').innerHTML=`&#9400 Todos los derechos reservados ${copyrightYear}`;

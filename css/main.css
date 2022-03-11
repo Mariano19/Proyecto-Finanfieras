@@ -43,10 +43,20 @@ a, a:hover, a:active, a:visited{
   }
   /*Logo*/
 .navbar-brand img{
-  width: 64px;
-  height: 64px;
-}
 
+  width: 100px;
+  height: 100px;
+  margin-left: 40vw;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px){
+  .navbar-brand img{
+    width: 64px;
+    height: 64px;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
 
 /*Secciones*/
 .secciones{
@@ -56,7 +66,7 @@ a, a:hover, a:active, a:visited{
   @media (min-width: 768px){
     .secciones{
         width: 100%;
-        height: 35rem;
+        height: 30rem;
     }
 }
 .cuadrosDeTexto{
@@ -97,19 +107,6 @@ a, a:hover, a:active, a:visited{
     font-size: 3.8rem;
   }
 }
-.patternRectangle{
-  background-position: center;
-  background-size: cover;
-  border-radius: 8px;
-  width: 18rem;
-  height: 12rem;
-}
-  @media (min-width: 768px){
-    .patternRectangle{
-      width: 40%;
-      height: 28rem;
-    }
-  }
   
 .centrado{
   display: flex;
@@ -143,12 +140,13 @@ a, a:hover, a:active, a:visited{
   margin-left: 8%;
 }
 
-.titulo span{
-  display: block;
-  margin-top: 2%;
-  font-weight: 300;
+@media (min-width: 768px){
+  .titulo span{
+    display: block;
+    margin-top: 2%;
+    font-weight: 300;
+  }
 }
-
 .redes-banner{
   position: relative;
   bottom: -9vh;
@@ -228,9 +226,6 @@ iframe{
   border-radius: 10px;
 }
 
-.seccionVideo{
-  /* background-image: url(../src/img/patronVioleta.jpg); */
-}
   .seccionVideo img{
     width: 8.5rem;
     height: 5.5rem;
@@ -295,14 +290,8 @@ iframe{
 
 /*SECCION QUIZ*/
 #quiz{
-<<<<<<< HEAD
   height: 15rem;
 }
-=======
-  height: 20rem;
-}
-
->>>>>>> 58702fadbe9bf76e3eb0dcd8aafccf6e4a50a07c
 .seccionQuiz{
   width: 100%;
   height: 15rem;   
@@ -346,9 +335,6 @@ iframe{
   justify-content: space-around;
   row-gap: 3rem;
 }
-.imgPlantilla{
-  display: none;
-}
 .imgPlantillaMobile{
   display: block;
   width: 99%;
@@ -360,16 +346,14 @@ iframe{
       flex-flow: row nowrap;
     }
     .imgPlantillaMobile{
-      display: none;
-    }
-    .imgPlantilla{
       display: block;
-      width: 36%;
+      width: 31.8rem;
+      height: 27.5rem;
     }
   }
 
   @media (min-width: 1600px){
-    .imgPlantilla{
+    .imgPlantillaMobile{
       display: block;
       width: 28%;
     }
@@ -508,7 +492,8 @@ form .inputsContainers {
   width: 100%;
   height: 20rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
   justify-content: space-around;
   align-items: center;
   color: white;
@@ -519,6 +504,29 @@ form .inputsContainers {
   align-items: flex-start;
   font-family: 'Poppins', sans-serif;    
   font-size: 0.8em;
+}
+.modal-content{
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  
+}
+.modal-header h5, .modal-body h5{
+  font-weight: 600;
+  font-size: 1em;
+}
+.modal-body{
+  font-size: 0.8em;
+}
+@media (min-width: 768px){
+  .footer{
+    flex-direction: row;}
+ .modal-content{
+    width: 60vw;
+  }
+  .modal-header h5, .modal-body h5{
+    font-weight: 600;
+    font-size: 1.5em;
+  }
 }
   .footer__condiciones span{
     padding: 10px;  

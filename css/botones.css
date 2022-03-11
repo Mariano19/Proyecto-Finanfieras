@@ -82,6 +82,9 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
+.botonVerde a{
+  text-decoration: none;
+}
 
 .boton-accion-secundario{    
     padding: 12px 30px;
