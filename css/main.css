@@ -85,7 +85,7 @@ a, a:hover, a:active, a:visited{
 }
 @media (min-width: 768px){
   .titulos{
-    font-size: 3em;
+    font-size: 4rem;
   }
 }
 .patternRectangle{
@@ -97,7 +97,7 @@ a, a:hover, a:active, a:visited{
 }
   @media (min-width: 768px){
     .patternRectangle{
-      width: 50%;
+      width: 40%;
       height: 28rem;
     }
   }
@@ -262,7 +262,7 @@ a, a:hover, a:active, a:visited{
 }
 @media (min-width: 768px){
   .carouselContendor{
-    width: 45%;
+    width: 40%;
   }
   .imgCarrousel{
     height: 35rem;
