@@ -18,8 +18,6 @@ a, a:hover, a:active, a:visited{
   font-weight: normal;
   font-style: normal;
 }
-/*fuente poppins de google fonts*//*para llamarla usar: 'Poppins', sans-serif*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /*NavBar*/
