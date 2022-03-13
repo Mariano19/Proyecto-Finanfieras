@@ -21,7 +21,7 @@
 <!-- Header/Navbar -->
     <header> 
       <nav class="navbar fixed-top navbar-expand-sm navbar-light">
-        <div class="container">
+        <div class="containerNavBar">
           <a class="navbar-brand" href="#"><img src="./src/img/isotipoBgVioleta.png" alt="Isotipo Finanfieras" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -52,9 +52,9 @@
       </nav>
     </header>
     <main>
-<!-- Banner Principal -->
+<!-- Banner Principal desktop -->
       <section class="seccionBanner"> 
-        <div class="banner-margen">
+        <div class="banner-margen bannerDesktop">
           <div class="logoBanner">
             <img src="./src/img/logoBlanco.png">          
           </div>   
@@ -68,8 +68,35 @@
             <a href="https://www.instagram.com/finanfieras/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@finanfieras?lang=es"><i class="fa-brands fa-tiktok"></i></a>
           </div>
-        </div>        
+        </div>
       </section>
+        <!--Esta seccion solo se muestra en Mobile-->
+        <div class="bannerMobile">
+          <div id="carouselExampleIndicators" class="carouselMobile carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100">  
+                  <div class="titulo">
+                    <p class="titulo-banner">La información es poder y en Finanfieras te empoderamos</p>
+                    <span>¿Hablar de finanzas te resulta aburrido? <br> Te demostraremos lo contrario.</span>
+                  </div>    
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="portadaMobile">
+                  <div class="logoBanner">
+                    <img src="./src/img/logoBlanco.png">          
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      
 
 <!-- Video de presentacion -->
       <section class="secciones" id="quienesSomos">
@@ -213,8 +240,7 @@
           </div>
           <div class="modal-body">
             <p>Para Finanfieras Perú SRL es sumamente importante la seguridad de la privacidad de todos los usuarios que visitan nuestro sitio web, por lo que se establece la siguiente política de protección de la información personal.</p>
-            <p>Finanfieras Perú SRL aprecia y agradece la confianza de los visitantes a nuestro sitio web y tratará toda la información personal de manera cuidadosa y responsable; practicando los más altos criterios en materia de protección de datos y privacidad. 
-            Al acceder al sitio web, se entiende que el usuario acepta las prácticas descritas en la presente Política de Privacidad y da su consentimiento expreso al tratamiento de los datos personales por él facilitados o proporcionados a través de su acceso al sitio web por cualquier medio.</p>
+            <p>Al acceder al sitio web, se entiende que el usuario acepta las prácticas descritas en la presente Política de Privacidad y da su consentimiento expreso al tratamiento de los datos personales por él facilitados o proporcionados a través de su acceso al sitio web por cualquier medio.</p>
             <p>Los datos personales recogidos formarán parte de una base de datos que permanecerá vigente durante el periodo que el usuario considere necesario para cumplir con la finalidad concreta para la que fueron recabados, una vez concluida, sus datos serán cancelados.</p> 
             <h5>
               ¿Para qué fines utilizaremos tus datos personales?
@@ -227,12 +253,14 @@
               <li>Enviar boletines y notificaciones relacionadas con nuestros proyectos y servicios</li>
               <li>Enviar notificaciones relacionadas con las modificaciones realizadas al presente aviso de privacidad</li>
             </ul>
-            <p> En caso de que no desees autorizar el uso de tus datos personales para las finalidades señaladas en este párrafo, Finanfieras Perú SRL    agradece que nos lo hagas saber enviando un correo electrónico a: <a href="finanfieras@gmail.com">finanfieras@gmail.com</a>
-            Puedes revocar tu consentimiento para el uso de tus datos personales
-            Puedes revocar tu consentimiento en cualquier momento enviándonos una notificación a la siguiente dirección de correo electrónico: <a href="finanfieras@gmail.com">finanfieras@gmail.com</a> </p>
+            <p>En caso de que no desees autorizar el uso de tus datos personales para las finalidades señaladas en este párrafo, Finanfieras Perú SRL    agradece que nos lo hagas saber enviando un correo electrónico a: <b><u>finanfieras@gmail.com</u></b></p>
+            <h5>Revocar consentimiento para el uso de datos personales</h5>
+            <p>
+            Puedes revocar tu consentimiento en cualquier momento enviándonos una notificación a la siguiente dirección de correo electrónico: <b><u>finanfieras@gmail.com</u></b>
+            </p>
             <p>Los Usuarios garantizan y responden, en cualquier caso, de la veracidad, exactitud, vigencia, licitud y autenticidad de todos los datos e información personal ingresada. </p>
             <h5>Consultas sobre privacidad y tratamiento de datos</h5>
-            <p>Si tiene dudas o preguntas sobre las políticas de privacidad o tratamiento de datos de Finanfieras Perú SRL por favor utilice la dirección de correo electrónico para contactarnos: <a href="finanfieras@gmail.com">finanfieras@gmail.com</a></p>
+            <p>Si tiene dudas o preguntas sobre las políticas de privacidad o tratamiento de datos de Finanfieras Perú SRL por favor utilice la dirección de correo electrónico para contactarnos: <b><u>finanfieras@gmail.com</u></b></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="boton-accion" data-bs-dismiss="modal">ACEPTAR POLITICAS</button>
