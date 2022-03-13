@@ -353,17 +353,14 @@ iframe{
   background-repeat: no-repeat;
   background-size: cover;
   height: 3.5rem;
-  width:100%;  
-  margin-bottom: 4rem;  
+  width:100%; 
 }
 
 /*SECCION NUESTROS CLIENTES*/
 .seccion-clientes{
   display: flex;
   flex-flow: column nowrap;
-  height: 30rem;
-  /* margin-left: 1rem; */
-  margin-bottom: 5rem;
+  height: 30rem;  
   align-items: center;
 }
 .textoSeccionClientes{
@@ -393,7 +390,8 @@ iframe{
   }
   @media (min-width: 768px){
     .seccion-clientes{
-      height: 27rem;
+      height: 33rem;
+      justify-content: space-evenly;
     }
     .containerLogos{
       flex-flow: row nowrap;
@@ -416,8 +414,6 @@ iframe{
   flex-flow: column nowrap;
   align-items: center;
   width: 90%;
-  margin-top: 3%;
-  margin-bottom: 5%;
   text-align: justify;
 }
 
