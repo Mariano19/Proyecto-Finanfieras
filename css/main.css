@@ -135,7 +135,7 @@ a, a:hover, a:active, a:visited{
   font-size: 3rem;
   font-weight: 500;
   display: inline-flex;
-  width: 46%;
+  width: 50%;
 }
 
 .banner-margen{
@@ -164,13 +164,6 @@ a, a:hover, a:active, a:visited{
 }
 
 .logoBanner{
-  /* position: relative;
-  left: 1rem;
-  top: 2rem; 
-  display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-  justify-content: center; */
   position: relative;
   float: right;
   right: 12%;  
