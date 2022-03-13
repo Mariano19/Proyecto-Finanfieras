@@ -22,7 +22,7 @@ a, a:hover, a:active, a:visited{
 
 /*NavBar*/
 .navbar{
-  background-color: #755af3e6; 
+  background-color: #755BF4; 
   padding: 0;  
   width: 100%;
   font-weight: 500;
@@ -35,30 +35,48 @@ a, a:hover, a:active, a:visited{
   top: 6.9rem;
   left: 0;
   width: 100vw;
-  height: 28rem;
-  background-color: #49D3B9;
+  height: 29.5rem;
+  background-color: #755BF4;
 }
 .navbar-nav{
   display: flex;
-  row-gap: 1.2rem;
+  row-gap: 1.5rem;
   margin-left: 1rem;
 }
-.nav-item{
-  text-decoration: solid white 2px;
+.navbar-toggler{
+  border: none;
+}
+.containerNavBar{
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+}
+
+.toggler{
+  height: 40px;
+  width: 30px;
+}
+.nav-link{
+  width: 15rem;
+  padding-bottom: 1rem;
+  border-bottom: solid white 1px;
+  font-family: 'Poppins', sans-serif;
 }
   @media (min-width: 768px){
     .navbar-collapse{
       justify-content: end;
+      position:unset;
+      white-space: nowrap;
+      height: inherit;
     }
-  }
-  .navbar-toggler{
-    height: fit-content;
-  }
-  .containerNavBar{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    .containerNavBar{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
   /*Logo*/
 .navbar-brand img{
@@ -74,31 +92,24 @@ a, a:hover, a:active, a:visited{
     padding-bottom: 0;
   }
   .nav-link{
-    margin-left: 1rem;
+    margin-left: 1rem; 
+    width: inherit;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 1em;
   }
 }
 
-/*Secciones*/
-.secciones{
-  width: 100%;
-  align-items: center;
-}
-  @media (min-width: 768px){
-    .secciones{
-        width: 100%;
-        height: 28rem;
-    }
-}
 .cuadrosDeTexto{
   width: 80%;
-  height: 20rem;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
 }
-.cuadrosDeTexto p{
-  font-size: 1.2rem;
+.cuadrosDeTexto p, ul{
+  font-size: 0.8em;
 }
   @media (min-width: 768px){
     .cuadrosDeTexto{
@@ -107,6 +118,9 @@ a, a:hover, a:active, a:visited{
       flex-flow: column nowrap;
       text-align: left;
       justify-content: space-evenly;
+    }
+    .cuadrosDeTexto p, ul{
+      font-size: 1em;
     }
   }
 
@@ -118,7 +132,7 @@ a, a:hover, a:active, a:visited{
 
 .titulos{
   font-family: 'palmerlakeprint-regularRg';
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1rem;
   color: #755BF4;
 }
@@ -141,17 +155,48 @@ a, a:hover, a:active, a:visited{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25rem;
+  height: 30rem;
   width: 100%;
   color: white;
   background-color:#755BF4;
-  margin-top: 6.8rem;
+  margin-top: 6.3rem;
   
 }
 .carousel-indicators{
-  top: 15rem;
+  top: 18rem;
 }
-
+.bannerMobile{
+  height: 29rem;
+}
+.contenedorPortada{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.imgPortadaMobile{
+  width: 375px;
+  height: 225px;
+}
+.imgLogoMobile{
+  margin-left: 4rem;
+  width: 64px;
+  height: 64px;
+}
+.contenedorTextoPortda{
+  height: 18rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+.p1{
+  font-size: 1.3rem;
+}
+.p2{
+  font-size: 0.9rem;
+}
 
 
 /*SECCION BANNER DESKTOP*/
@@ -240,75 +285,80 @@ a, a:hover, a:active, a:visited{
 .seccion-quienesSomos{
   display: flex;
   flex-flow: column nowrap;  
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  row-gap: 3rem;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 iframe{
   border-radius: 10px;
+  width: 100%;
+  height: auto;
 }
 
-  .seccionVideo img{
-    width: 8.5rem;
-    height: 5.5rem;
-  }
-    @media (min-width: 768px){
+
+    @media (min-width: 768px){    
+      iframe{
+        width: 560px;
+        height: 315px;
+      }
       .seccion-quienesSomos{
         justify-content: space-evenly;
-        flex-flow: row nowrap;
-        margin-top: 3rem;
-      }
-      .seccionVideo img{
-        width: 17rem;
-        height: 13rem;
+        flex-flow: row-reverse nowrap;
+        margin: 3rem 0 0 0;
       }
     }
 
 /*SECCION TIENDA*/
 
-#nuestraTienda{
-  height: 30rem;
-  margin-bottom: 3rem;
-}
-
-.seccion-tienda button{
-    width: 62%;
-}
-
 .seccion-tienda{
+  height: 40rem;
   display: flex;
   flex-flow: column nowrap;  
   justify-content: center;
   align-items: center;
+  row-gap: 2rem;
+  margin: 5rem 0;
 }
+
+.seccion-tienda button{
+    width: auto;
+    white-space: nowrap;
+}
+button a{
+  text-decoration: none;
+}
+
     @media (min-width: 768px){
       .seccion-tienda{
         margin-top: 5rem;
         flex-flow: row nowrap;
         justify-content: space-evenly;
         align-items:unset;
+        margin: 3rem 0 0 0;
+      }
+      .seccion-tienda button{
+        width:250px;
+        height: 40px;
+      }
+      button a{
+        white-space: nowrap;
       }
       
     }
 
 
-#carouselSlidesOnly{
-  width: 100%;
-}
-
 /*SECCION QUIZ*/
 #quiz{
-  height: 15rem;
+  height: 25rem;
 
 }
 .seccionQuiz{
   width: 100%;
-  height: 15rem;   
+  height: 20rem;   
   text-align: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #755BF4;
 }
   .seccionQuiz h2{
@@ -323,10 +373,8 @@ iframe{
       justify-content: center;
       align-items: center;
     }
+
     @media (min-width: 768px){
-      #quiz{
-        margin-bottom: 1.5rem;
-      }
       .leonQuiz{
         width:12.3rem;
         height:12.4rem;
@@ -346,32 +394,28 @@ iframe{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   row-gap: 3rem;
 }
 .imgPlantillaMobile{
-  display: block;
   width: 99%;
+  border: #755AF3 1px solid;
+  border-radius: 10px;
 }
   
   @media (min-width: 768px){
     .seccion-plantilla{
-      justify-content: space-evenly;
+      height: 40rem;
       flex-flow: row nowrap;
     }
     .imgPlantillaMobile{
-      display: block;
       width: 36rem;
       height: 29rem;
-      border: #755AF3 1px solid;
-      border-radius: 10px;
-      padding: 2rem;
     }
   }
 
   @media (min-width: 1600px){
     .imgPlantillaMobile{
-      display: block;
       width: 28%;
     }
 
@@ -389,12 +433,8 @@ iframe{
 .seccion-clientes{
   display: flex;
   flex-flow: column nowrap;
-  height: 30rem;  
+  height: 43rem;  
   align-items: center;
-}
-.textoSeccionClientes{
-  font-family: 'Poppins', sans-serif;
-  width: 51%;
 }
 
 .containerLogos{
@@ -413,14 +453,18 @@ iframe{
     object-fit: contain;
     border-radius: 16px;
     border: #cecece solid 1px;
-    /* -webkit-box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); 
-    box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); */
+    -webkit-box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); 
+    box-shadow: 2px 2px 10px 6px rgba(55,71,79,0.39); 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @media (min-width: 768px){
     .seccion-clientes{
       height: 33rem;
       justify-content: space-evenly;
+      margin: 3rem 0;
+    }
+    .textoClientes{
+      width: 60%;
     }
     .containerLogos{
       flex-flow: row nowrap;
@@ -442,8 +486,7 @@ iframe{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  width: 90%;
-  text-align: justify;
+  margin-top: 2rem;
 }
 
 form .inputsContainers {
@@ -465,14 +508,14 @@ form .inputsContainers {
   display: flex;
   flex-flow: column nowrap;
   height: 6rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
   .formulario input{
     width: 13rem;
     height: 40px;
     border-radius: 8px;
-    border: 2px solid #49D3B9;
+    border: 1px solid #cecece;
     padding: 1rem 0rem;
     margin-bottom: 1.5rem;
   }
@@ -480,11 +523,15 @@ form .inputsContainers {
     height: 10rem;
     width: 100%;
     border-radius: 8px;
-    border: 2px solid #49D3B9;
+    border: 1px solid #cecece;
   }
     @media (min-width: 768px){
       .formulario{
         height: 20rem;
+      }
+      .textoForm{
+        width: 100%;
+        height: auto;
       }
       .inputsContainers{
         flex-flow: row nowrap;
@@ -518,7 +565,7 @@ form .inputsContainers {
   flex-direction: column;
   align-items: flex-start;
   font-family: 'Poppins', sans-serif;    
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .modal-content{
   font-family: 'Poppins', sans-serif;
@@ -552,7 +599,7 @@ form .inputsContainers {
 
 .footer__redes{
   font-family: 'palmerlakeprint-regularRg';
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
   .footer__redes i{

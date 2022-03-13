@@ -24,7 +24,7 @@
         <div class="containerNavBar">
           <a class="navbar-brand" href="#"><img src="./src/img/isotipoBgVioleta.png" alt="Isotipo Finanfieras" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <span><img class="toggler" src="./src/img/logoMenu.png" alt=""></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
@@ -78,20 +78,17 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-block w-100">  
-                  <div class="titulo">
-                    <p class="titulo-banner">La información es poder y en Finanfieras te empoderamos</p>
-                    <span>¿Hablar de finanzas te resulta aburrido? <br> Te demostraremos lo contrario.</span>
-                  </div>    
-                </div>
-              </div>
               <div class="carousel-item">
-                <div class="portadaMobile">
-                  <div class="logoBanner">
-                    <img src="./src/img/logoBlanco.png">          
-                  </div> 
-                </div>
+                <div class="contenedorTextoPortda">
+                  <p class="p1">La información es poder y en Finanfieras te empoderamos</p>
+                  <p class="p2">¿Hablar de finanzas te resulta aburrido?  </br>Te demostraremos lo contrario.</p>
+                </div>    
+              </div>
+              <div class="carousel-item  active">
+                <div class="contenedorPortada d-block w-100">
+                  <img class="imgLogoMobile" src="./src/img/logoBlanco.png">  
+                  <img class="imgPortadaMobile" src="./src/img/fotoPortada.png" alt="">
+                </div>   
               </div>
             </div>
           </div>
@@ -99,11 +96,8 @@
       
 
 <!-- Video de presentacion -->
-      <section class="secciones" id="quienesSomos">
+      <section id="quienesSomos">
         <div class="seccion-quienesSomos">
-          <div class="patternRectangle seccionVideo centrado">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gy9MckuHDTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
           <div class="cuadrosDeTexto">
             <h2 class="titulos">QUIÉNES SOMOS</h2>
               <p>Somos Ale, Karen y Majo, tres amigas que decidieron actuar en favor de la educación financiera en su país.</p>
@@ -112,19 +106,28 @@
               <p> Por eso nos preguntamos: <br>
                   <b>¿Cómo podemos contribuir a que logren su libertad financiera?</b> <br> Es así como nació <b>Finanfieras</b>.</p> 
           </div>
+          <div class="seccionVideo centrado">
+            <iframe src="https://www.youtube.com/embed/Gy9MckuHDTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>    
       </section>
 
 <!-- Tienda -->
-      <section class="secciones" id="nuestraTienda">
+      <section id="nuestraTienda">
         <div class="seccion-tienda">
           <div class="cuadrosDeTexto">
             <h2 class="titulos">¡Conoce @fierashop!</h2>
             <p>Adoptar el hábito del ahorro puede ser complicado al inicio, ¡pero nada que una <em>alcancía Finanfiera</em> no pueda solucionar!</p>
-            <p> Encuentra tu modelo favorito en nuestra tienda virtual, y <b>¡que empiece el ahorro!</b></p>
-            <a href="https://fierashop.tiendada.com/"><button class="boton-accion" role="button">VISITA NUESTRA TIENDA</button></a>
+            <p>
+              Encuentra tu modelo favorito en nuestra tienda virtual, y <b>¡que empiece el ahorro!</b>
+            </p>
+            <button class="boton-accion" role="button">
+              <a href="https://fierashop.tiendada.com/">
+              VISITA NUESTRA TIENDA
+              </a>
+            </button>
           </div>         
-          <div class="carouselContendor">            
+          <div>            
             <img src="./src/img/alcanciaInicial.jpg"> 
           </div> 
         </div>
@@ -168,9 +171,9 @@
 <!-- Logos clientes -->
       <section class="centrado" id="clientes">
         <div class="seccion-clientes">
-            <div class="textoSeccionClientes">
-              <h2 class="titulos">¿Quiénes usan nuestros servicios?</h2>
-              <p>Diseñamos campañas de comunicación digital de educación financiera, lideramos charlas de libertad financiera y violencia económica, y creamos contenido educativo y divertido en nuestras redes sociales:</p>
+            <div class="cuadrosDeTexto cuadrosDeTextoAncho">
+              <h2 class="titulos">¿Quiénes han confiado en nuestro trabajo?</h2>
+              <p>Diseñamos campañas de comunicación digital de educación financiera, lideramos charlas de libertad financiera y violencia económica; y creamos contenido educativo y divertido en nuestras redes sociales:</p>
               <ul>
                 <li>Instagram:<b> +63k seguidor@s</b></li>
                 <li>Facebook:<b> +2K seguidor@s</b> </li>
@@ -209,7 +212,7 @@
 <!-- Formulario de contacto-->
       <section class="centrado" id="contacto"> 
         <div class="seccion-formulario">
-          <div>
+          <div class="cuadrosDeTexto textoForm">
             <h2 class="titulos">¿Tienes un proyecto en mente?</h2>
             <p>Completa el siguiente formulario y te estaremos contactando:</p>
           </div>
@@ -245,7 +248,7 @@
             <h5>
               ¿Para qué fines utilizaremos tus datos personales?
             </h5>
-            <p>Los datos personales que tendrá Finanfieras Perú SRL serán gestionados y tratados para las finalidades nombradas a continuación.El usuario declara aceptar y prestar su consentimiento libre, previo, expreso, inequívoco e informado para el tratamiento de sus datos personales a favor de Financieras Perú SRL para las siguientes finalidades: </p>
+            <p>Los datos personales que tendrá Finanfieras Perú SRL serán gestionados y tratados para las finalidades nombradas a continuación. El usuario declara aceptar y prestar su consentimiento libre, previo, expreso, inequívoco e informado para el tratamiento de sus datos personales a favor de Finanfieras Perú SRL para las siguientes finalidades: </p>
             <ul>
               <li>Identificación de los usuarios al momento de brindar información o contenidos.</li>
               <li>Fines estadísticos.</li>
