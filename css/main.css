@@ -264,22 +264,6 @@ iframe{
       
     }
 
-/* CARROUSEL */
-/* .carouselContendor{
-  width: 100%;
-}
-.carousel-inner{
-  border-radius: 10px;
-}
-
-@media (min-width: 768px){
-  .carouselContendor{
-    width: 40%;
-  }
-  .imgCarrousel{
-    height: 35rem;
-   }
-} */
 
 #carouselSlidesOnly{
   width: 100%;
@@ -369,7 +353,8 @@ iframe{
   background-repeat: no-repeat;
   background-size: cover;
   height: 3.5rem;
-  width:100%;    
+  width:100%;  
+  margin-bottom: 4rem;  
 }
 
 /*SECCION NUESTROS CLIENTES*/
@@ -408,7 +393,7 @@ iframe{
   }
   @media (min-width: 768px){
     .seccion-clientes{
-      height: 20rem;
+      height: 27rem;
     }
     .containerLogos{
       flex-flow: row nowrap;
