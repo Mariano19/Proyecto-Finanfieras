@@ -31,21 +31,39 @@ a, a:hover, a:active, a:visited{
 .navbar-collapse{
   display: flex;
   color: #ffffff;
+  position: absolute;
+  top: 6.9rem;
+  left: 0;
+  width: 100vw;
+  height: 28rem;
+  background-color: #49D3B9;
 }
-.navbar-toggler{
-  margin-right: 1rem;
+.navbar-nav{
+  display: flex;
+  row-gap: 1.2rem;
+  margin-left: 1rem;
+}
+.nav-item{
+  text-decoration: solid white 2px;
 }
   @media (min-width: 768px){
     .navbar-collapse{
       justify-content: end;
     }
   }
+  .navbar-toggler{
+    height: fit-content;
+  }
+  .containerNavBar{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
   /*Logo*/
 .navbar-brand img{
-
   width: 100px;
   height: 100px;
-  margin-left: 40vw;
   padding-bottom: 0.5rem;
 }
 @media (min-width: 768px){
@@ -115,77 +133,88 @@ a, a:hover, a:active, a:visited{
   justify-content: center;
   align-items: center;
 }
-
-/*SECCION BANNER*/
-.seccionBanner{
-  background-image: url(../src/img/fotoPortada.png);
+/*SECCION BANNER MOBILE*/
+.bannerDesktop{
+  display: none;
+}
+.bannerMobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
   color: white;
   background-color:#755BF4;
-  background-size: 50%;
-  background-position-x: 76%;
-  background-repeat: no-repeat;
-  margin:4rem 0 3rem 0;
-  height: 15rem;
-  font-family: 'Poppins', sans-serif;
-  background-position-y: bottom;
+  margin-top: 6.8rem;
+  
+}
+.carousel-indicators{
+  top: 15rem;
 }
 
-.titulo-banner{
-  margin-top: 7rem;
-  font-size: 3rem;
-  font-weight: 500;
-  display: inline-flex;
-  width: 50%;
-}
 
-.banner-margen{
-  margin-left: 8%;
-}
 
-@media (min-width: 768px){
-  .titulo span{
-    display: block;
-    margin-top: 2%;
-    font-weight: 300;
-  }
-}
-.redes-banner{
-  position: relative;
-  bottom: -9vh;
-}
+/*SECCION BANNER DESKTOP*/
 
-.redes-banner a{
-  font-size: 1.5rem;
-    padding: 10px;
-}
-
-.redes-banner p{
-  font-size: 1.2rem;
-}
-
-.logoBanner{
-  position: relative;
-  float: right;
-  right: 12%;  
-  top: 6rem;
-}
-  .logoBanner img{
-    width: 5rem;
-    height: 5rem;
-  }
-  .logoBanner p{
-    opacity: 0;
-  }
     @media (min-width: 768px){
+      .bannerMobile{
+        display: none;
+      }
+      .bannerDesktop{
+        display: block;
+      }
       .seccionBanner{
+        background-image: url(../src/img/fotoPortada.png);
+        color: white;
+        background-color:#755BF4;
+        background-size: 50%;
+        background-position-x: 76%;
+        background-repeat: no-repeat;
         margin-top: 0;
         height: 40rem;
+        font-family: 'Poppins', sans-serif;
+        background-position-y: bottom;
       }
-      /* .logoBanner{
-         left: 2rem;
-        top: 8rem; 
-      } */
-      .logoBanner img{
+      
+      .titulo-banner{
+        margin-top: 7rem;
+        font-size: 3rem;
+        font-weight: 500;
+        display: inline-flex;
+        width: 50%;
+      }
+      
+      .banner-margen{
+        margin-left: 8%;
+      }
+      
+        .titulo span{
+          display: block;
+          margin-top: 2%;
+          font-weight: 300;
+        }
+      
+      .redes-banner{
+        position: relative;
+        bottom: -9vh;
+      }
+      
+      .redes-banner a{
+        font-size: 1.5rem;
+          padding: 10px;
+      }
+      
+      .redes-banner p{
+        font-size: 1.2rem;
+      }
+      
+      .logoBanner{
+        position: relative;
+        float: right;
+        right: 12%;  
+        top: 6rem;
+      }
+        .logoBanner img{
           width: 13rem;
           height: 13rem;
         }
@@ -194,9 +223,9 @@ a, a:hover, a:active, a:visited{
           font-family: 'Poppins', sans-serif;
           position: relative;
           font-size: 1.2em;
-      }
+        }
+
     }
-  
     @media (min-width: 1400px){
       .titulo-banner{
         width: 33%;
